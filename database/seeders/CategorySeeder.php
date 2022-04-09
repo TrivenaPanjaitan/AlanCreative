@@ -17,7 +17,7 @@ class CategorySeeder extends Seeder
     {
         $category = [
             [
-                'category' => 'Cumi & Kerang',
+                'category' => 'Cumi&Kerang',
                 'picture' => 'public/images/Category/cumi_n_kerang.png'
             ],
             [

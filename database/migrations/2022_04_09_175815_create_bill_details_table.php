@@ -14,11 +14,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('product_lists', function (Blueprint $table) {
+        Schema::create('bill_details', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->string('picture');
+            $table->string('qty', 12, 2)->default(1);
             $table->double('price', 12, 2)->default(0);
+            $table->foreign('name')->references('name')->on('product_lists');
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
@@ -31,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('product_lists');
+        Schema::dropIfExists('bill_details');
     }
 };

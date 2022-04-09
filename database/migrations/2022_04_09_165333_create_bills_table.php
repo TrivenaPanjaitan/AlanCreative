@@ -14,11 +14,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('product_lists', function (Blueprint $table) {
+        Schema::create('bills', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->unique();
-            $table->string('picture');
-            $table->double('price', 12, 2)->default(0);
+            $table->double('subtotal', 12, 2)->default(0);
+            $table->double('total', 12, 2)->default(0);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
@@ -31,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('product_lists');
+        Schema::dropIfExists('bills');
     }
 };
