@@ -10,6 +10,9 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- Styles -->
     <style>
         /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -512,14 +515,16 @@
                                     href="https://forge.laravel.com" class="underline">Forge</a>, <a
                                     href="https://vapor.laravel.com" class="underline">Vapor</a>, <a
                                     href="https://nova.laravel.com" class="underline">Nova</a>, and <a
-                                    href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects
+                                    href="https://envoyer.io" class="underline">Envoyer</a> help you take your
+                                projects
                                 to the next level. Pair them with powerful open source libraries like <a
                                     href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a
                                     href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a
                                     href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a
                                     href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a
                                     href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a
-                                    href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
+                                    href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and
+                                more.
                             </div>
                         </div>
                     </div>
