@@ -17,9 +17,9 @@ use App\Http\Controllers\PointofSalesController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
@@ -29,5 +29,5 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-Route::get('/point-of-sales', [PointofSalesController::class, 'index'])->name('pointofSales');
+Route::get('/', [PointofSalesController::class, 'index'])->name('pointofSales');
 Route::get('/bill', [PointofSalesController::class, 'bill'])->name('bill');
