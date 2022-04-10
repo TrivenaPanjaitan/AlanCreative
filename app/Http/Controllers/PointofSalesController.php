@@ -25,4 +25,15 @@ class PointofSalesController extends Controller
             'billdetails' => $billdetails,
         ]);
     }
+
+    function bill()
+    {
+        $bill = Bill::all();
+        $billdetails = BillDetails::orderBy('id', 'asc')->get();
+
+        return view('bill', [
+            'bill' => $bill,
+            'billdetails' => $billdetails,
+        ]);
+    }
 }

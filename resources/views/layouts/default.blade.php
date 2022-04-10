@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <div id="default">
+    <div id="point-of-sales">
         <main class="py-4">
             @yield('content')
         </main>

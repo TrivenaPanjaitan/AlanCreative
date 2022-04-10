@@ -30,3 +30,4 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::get('/point-of-sales', [PointofSalesController::class, 'index'])->name('pointofSales');
+Route::get('/bill', [PointofSalesController::class, 'bill'])->name('bill');
